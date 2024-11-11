@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #343541;
+}
+
+.hero-image {
+  background-image: url('https://wallpapers.com/images/hd/redwood-trees-pictures-3840-x-2160-36rw788zxnh8g338.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ECECF1;
+  caret-color: transparent;
+}
+
+.above-title{
+  max-width: 600px;
+  font-size: 1.5em;
+  text-align: center;
+  white-space: normal;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#title {
+  max-width: 600px;
+  font-size: 1em;
+  text-align: center;
+  white-space: normal;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#cursor {
+  display: inline-block;
+  width: 4px;
+  height: 1em;
+  background-color: #ECECF1;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.intro{
+  margin-top: 35px;;
+  text-align: center;
+  color: white;
+}
+
+.image-container {
+  display: flex;
+  text-align: center;
+  margin-top: 35px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.rounded-image {
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 100px;
+}
+
+.text-content {
+  font-size: clamp(1rem, 1.75vw, 1.2rem);;
+  max-width: 100%;
+  color: #ECECF1;
+  text-align: left;
+  margin-left: 50px;
+}
